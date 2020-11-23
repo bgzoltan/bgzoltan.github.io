@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500;800&display=swap");
+body {
+  margin: 0;
+  left: 0;
+  top: 0;
+  background-color: #0f077f;
+  background-image: url(/img/sas-flight.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 5%;
+  font-family: 'Assistant',sans-serif;
+  font-size: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body h1 {
+  font-size: 3vw;
+}
+
+body h2 {
+  font-size: 2vw;
+}
+
+.NavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0f077f;
+  color: #d5d7e2;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(2vw *3);
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0px;
+}
+
+.Logo {
+  position: absolute;
+  height: calc(calc(2vw *3) * 0.5);
+  width: calc(2vw *3);
+  top: calc(calc(2vw *3) *0.5/2);
+  left: calc(calc(2vw *3) *0.5/2);
+  background-color: #0f077f;
+}
+
+.BurgerMenu {
+  position: absolute;
+  height: calc(calc(2vw *3) *0.6);
+  width: calc(calc(2vw *3)*0.6);
+  top: calc(calc(2vw *3)*0.6/3);
+  right: calc(calc(2vw *3)*0.6/3);
+  color: #d5d7e2;
+  background-color: #0f077f;
+  -webkit-transition: opacity .9s linear, -webkit-transform .7s ease;
+  transition: opacity .9s linear, -webkit-transform .7s ease;
+  transition: transform .7s ease, opacity .9s linear;
+  transition: transform .7s ease, opacity .9s linear, -webkit-transform .7s ease;
+}
+
+.Close {
+  position: absolute;
+  height: calc(calc(2vw *3) *0.6);
+  width: calc(calc(2vw *3)*0.6);
+  top: calc(calc(2vw *3)*0.6/3);
+  right: calc(calc(2vw *3)*0.6/3);
+  color: #d5d7e2;
+  background-color: #0f077f;
+}
+
+.BurgerMenu:hover {
+  position: absolute;
+  height: calc(calc(2vw *3) *0.6);
+  width: calc(calc(2vw *3)*0.6);
+  top: calc(calc(2vw *3)*0.6/3);
+  right: calc(calc(2vw *3)*0.6/3);
+  color: #d5d7e2;
+  background-color: #0f077f;
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.MenuItem {
+  background-color: #0f077f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.WelcomeCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  height: 20vw;
+  position: absolute;
+  top: calc((100% - 20vw) / 2);
+  left: calc((100% - 50vw) / 2);
+  background-color: #0f077f;
+  opacity: 80%;
+  border: solid #d5d7e2;
+  -webkit-box-shadow: 7px 7px #021e57;
+          box-shadow: 7px 7px #021e57;
+  padding: 0;
+}
+
+.WelcomeCard .WelcomeText {
+  color: #fefbd8;
+  text-align: center;
+  padding: 0;
+  margin-top: calc((20vw - 3vw - 2vw ) /2.5);
+}
+
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc(100% - calc(2vw *3));
+  height: calc(1 * calc(2vw *3));
+  background-color: #0f077f;
+  color: #d5d7e2;
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+}
+
+.Footer .FooterIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4px;
+}
+
+.icon {
+  color: #d5d7e2;
+}
+
+.icon:hover {
+  color: #e4283f;
+}
+/*# sourceMappingURL=style.css.map */

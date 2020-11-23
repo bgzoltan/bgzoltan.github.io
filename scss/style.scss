@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;800&display=swap');
+@import "_variables.scss";
+// @use "variables";
+
+
+body {
+    margin:0;
+    left:0;
+    top:0;
+    background-color:$BackGroundColor;
+    background-image:url(/img/sas-flight.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: 50% 5%;
+    // opacity:80%;
+    font-family: 'Assistant',sans-serif;
+    font-size:$FontSizeBody;
+    box-sizing: border-box;
+
+    h1 {
+        font-size: $FontSizeLarge;
+    }
+
+    h2 {
+        font-size: $FontSizeNormal;
+    }
+}
+
+
+
+.NavBar {
+    display:flex;
+    position:fixed;
+    justify-content: space-between;
+    background-color: $MenuBackgroundColor;
+    color:$MenuColor;
+    width: 100%;
+    align-items:center;
+    height:$NavHeight;
+    margin:0;
+    padding:0;
+    left:0;
+    top:0px;
+
+}
+
+.Logo {
+    position:absolute;
+    height:calc(#{$NavHeight} * 0.5);
+    width:$NavHeight;
+    top:calc(#{$NavHeight} *0.5/2);
+    left:calc(#{$NavHeight} *0.5/2);
+    background-color:$MenuBackgroundColor;
+}
+
+.BurgerMenu {
+    @include BurgerClose;
+    transition: transform .7s ease, opacity .9s linear; 
+}
+
+
+.Close {
+    @include BurgerClose;
+}
+
+.BurgerMenu:hover {
+    @include BurgerClose;
+    opacity: 0;
+    transform:rotate(180deg);
+}
+
+.MenuItem {
+    background-color: $MenuBackgroundColor;
+    align-items:center;
+}
+
+// @media only screen and {max-width: ;}
+
+.WelcomeCard {
+    display:flex;
+    // flex-basis:40vw;
+    width:$WelcomeCardWidth;
+    height:$WelcomeCardHeight;
+    position:absolute;
+    top:calc((100% - #{$WelcomeCardHeight}) / 2);
+    left:calc((100% - #{$WelcomeCardWidth}) / 2);
+    background-color:$BackGroundColor;
+    opacity:80%;
+    border: solid $MenuColor;
+    box-shadow: 7px 7px $ShadowColor;
+    padding:0;
+    .WelcomeText {
+        color:#fefbd8;
+        text-align: center;
+        // border: solid black;
+        padding:0;
+        margin-top:calc((#{$WelcomeCardHeight} - #{$FontSizeLarge} - #{$FontSizeNormal} ) /2.5);
+    }
+}
+
+.Footer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:absolute;
+    top:calc(100% - #{$NavHeight});
+    height:calc(1 * #{$NavHeight});
+    background-color:$MenuBackgroundColor;
+    color:$MenuColor;
+    width: 100%;
+    margin:0px;
+    padding:0;
+
+    .FooterIcons {
+        display:flex;
+        margin: 4px;
+    }
+}
+
+.icon {
+    color:$MenuColor;
+    &:hover {
+        color:#e4283f;
+      }
+}
+
