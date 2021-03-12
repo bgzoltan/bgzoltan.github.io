@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;800&display=swap');
 @import "_variables.scss";
-// @use "variables";
 
 
 body {
@@ -8,7 +7,7 @@ body {
     left:0;
     top:0;
     background-color:$BackGroundColor;
-    background-image:url(/img/sas-flight.jpg);
+    background-image:url("../img/sas-flight.jpg");
     background-repeat:no-repeat;
     background-size:100%;
     background-position: 50% 5%;
