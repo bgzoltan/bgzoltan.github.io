@@ -1,14 +1,14 @@
-$MenuBackgroundColor:#0f077f;
+$MenuBackgroundColor: rgba(45, 76, 133, 1);
 $MenuColor:#d5d7e2;
 $TextColor:#fefbd8;
 
-$BackGroundColor:#0f077f;
-$ShadowColor: #021e57;
+$BackGroundColor:rgb(0, 2, 5);
+$ShadowColor:rgba(45, 76, 133, 0.9);
 $WelcomeCardWidth:50vw;
-$WelcomeCardHeight:20vw;
-$FontSizeBody:2vw;
+$WelcomeCardHeight:2.6vw;
+$FontSizeBody:1.5vw;
 $FontSizeNormal:2vw;
-$FontSizeLarge:3vw;
+$FontSizeLarge:2.2vw;
 $NavHeight:calc(#{$FontSizeBody} *3 );
 
 @mixin BurgerClose {

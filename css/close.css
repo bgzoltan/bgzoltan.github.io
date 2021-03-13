@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;800&display=swap');
+
+#closePage{
+     font-family: Assistant,sans-serif;
+     font-size:x-large;
+     height:100vh;
+     width:100vw;
+     color:white;
+     background-color: #000205;
+     background-image: none;
+     display:flex;
+     justify-content: center;
+     top:50%;
+     background-image: url("../img/ISS-from-long-distance.jpg");
+     background-position: 140% 5%;
+     background-size: 90%;
+     background-repeat: no-repeat;
+   }

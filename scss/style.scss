@@ -4,14 +4,14 @@
 
 body {
     margin:0;
-    left:0;
-    top:0;
+    padding:0;
+    height:100vh;
+    box-sizing: border-box;
     background-color:$BackGroundColor;
-    background-image:url("../img/sas-flight.jpg");
+    background-image:url("../img/International-Space-Center.jpg");
     background-repeat:no-repeat;
     background-size:100%;
-    background-position: 50% 5%;
-    // opacity:80%;
+    background-position: center;
     font-family: 'Assistant',sans-serif;
     font-size:$FontSizeBody;
     box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
 .NavBar {
     display:flex;
     position:fixed;
-    justify-content: space-between;
+
     background-color: $MenuBackgroundColor;
     color:$MenuColor;
     width: 100%;
@@ -40,8 +40,14 @@ body {
     padding:0;
     left:0;
     top:0px;
-
+#ISS{
+    color: #e4283f;
+    font-size:$FontSizeLarge ;
+    font-weight: 800;;
 }
+}
+
+
 
 .Logo {
     position:absolute;
@@ -66,6 +72,7 @@ body {
     @include BurgerClose;
     opacity: 0;
     transform:rotate(180deg);
+    color:#e4283f;
 }
 
 .MenuItem {
@@ -75,19 +82,25 @@ body {
 
 // @media only screen and {max-width: ;}
 
+
+section{
+    display:flex;
+    justify-content: center;
+}
 .WelcomeCard {
     display:flex;
+    justify-content: center;
     // flex-basis:40vw;
     width:$WelcomeCardWidth;
     height:$WelcomeCardHeight;
-    position:absolute;
-    top:calc((100% - #{$WelcomeCardHeight}) / 2);
-    left:calc((100% - #{$WelcomeCardWidth}) / 2);
+    // position:absolute;
+    // top:calc((100% - #{$WelcomeCardHeight}) / 2);
+    // left:calc((100% - #{$WelcomeCardWidth}) / 2);
     background-color:$BackGroundColor;
     opacity:80%;
     border: solid $MenuColor;
     box-shadow: 7px 7px $ShadowColor;
-    padding:0;
+    padding:1vw 0 0 0;
     .WelcomeText {
         color:#fefbd8;
         text-align: center;
@@ -102,8 +115,9 @@ body {
     flex-direction:column;
     align-items:center;
     position:absolute;
-    top:calc(100% - #{$NavHeight});
-    height:calc(1 * #{$NavHeight});
+    // top:calc(100% - #{$NavHeight});
+    bottom:0;
+    height:5vw;
     background-color:$MenuBackgroundColor;
     color:$MenuColor;
     width: 100%;
