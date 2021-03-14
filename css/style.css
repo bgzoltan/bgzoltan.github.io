@@ -28,6 +28,7 @@ body h2 {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  z-index: 0;
   background-color: #2d4c85;
   color: #d5d7e2;
   width: 100%;
@@ -91,6 +92,7 @@ body h2 {
   opacity: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  color: #e4283f;
 }
 
 .MenuItem {
@@ -110,6 +112,7 @@ section {
 }
 
 .WelcomeCard {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,6 +130,7 @@ section {
 }
 
 .WelcomeCard .WelcomeText {
+  z-index: 11;
   color: #fefbd8;
   text-align: center;
   padding: 0;

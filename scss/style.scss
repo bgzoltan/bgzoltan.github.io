@@ -30,7 +30,7 @@ body {
 .NavBar {
     display:flex;
     position:fixed;
-
+    z-index: 0;
     background-color: $MenuBackgroundColor;
     color:$MenuColor;
     width: 100%;
@@ -88,6 +88,7 @@ section{
     justify-content: center;
 }
 .WelcomeCard {
+    z-index:10;
     display:flex;
     justify-content: center;
     // flex-basis:40vw;
@@ -102,6 +103,7 @@ section{
     box-shadow: 7px 7px $ShadowColor;
     padding:1vw 0 0 0;
     .WelcomeText {
+        z-index: 11;
         color:#fefbd8;
         text-align: center;
         // border: solid black;
